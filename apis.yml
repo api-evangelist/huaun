@@ -1,8 +1,27 @@
 aid: huaun
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/huaun.png
 name: Huaun
-description: 'Huaun is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Huaun (华云安, Huayun''an) is a Beijing-based cybersecurity company specializing in
+  attack surface management, vulnerability research, and adversarial (offensive/defensive) security.
+  Its product line centers on three AI-driven systems: Ai·Vul (灵洞), an adaptive threat and
+  vulnerability management platform that discovers and inventories host, web, IoT, and
+  container-cluster assets along with eighteen classes of digital exposure including APIs; Ai·Radar
+  (灵知), a threat-intelligence engine built on natural-language processing and knowledge graphs
+  across thirty-plus data sources; and Ai·Bot (灵刃), an intelligent penetration-testing and
+  attack-simulation system backed by a library of over 160,000 vulnerabilities and 2,000+
+  proof-of-concept exploits. Backed by DCM Ventures and other investors, Huaun helps enterprises
+  continuously discover and validate their external and internal attack surface.'
 url: https://raw.githubusercontent.com/api-evangelist/huaun/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Cybersecurity
+- Attack Surface Management
+- Vulnerability Management
+- Threat Intelligence
+- Penetration Testing
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/huaun-domain-security.yml
 - type: Website
   url: https://www.huaun.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
